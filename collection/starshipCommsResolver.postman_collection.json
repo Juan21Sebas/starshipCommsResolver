@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "bbd09472-22f3-4c62-a448-f99f4c00a50e",
+		"name": "starshipCommsResolver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20306858"
+	},
+	"item": [
+		{
+			"name": "GetTopSecret",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{{host}}:{{port}}/topsecret_split/kenobi"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTopSecret",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"satellites\": [\n        {\n            \"name\": \"kenobi\",\n            \"distance\": 100.0,\n            \"message\": [\n                \"este\",\n                \"\",\n                \"\",\n                \"mensaje\",\n                \"\"\n            ]\n        },\n        {\n            \"name\": \"skywalker\",\n            \"distance\": 115.5,\n            \"message\": [\n                \"\",\n                \"es\",\n                \"\",\n                \"\",\n                \"secreto\"\n            ]\n        },\n        {\n            \"name\": \"sato\",\n            \"distance\": 142.7,\n            \"message\": [\n                \"este\",\n                \"\",\n                \"un\",\n                \"\",\n                \"\"\n            ]\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{host}}:{{port}}/topsecret/"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTopSecretSplit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 100.0,\n    \"message\":  [\"\", \"es\", \"un\", \"\", \"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{host}}:{{port}}/topsecret_split/kenobi"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "34.136.220.162",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "80",
+			"type": "string"
+		}
+	]
+}
