@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "bbd09472-22f3-4c62-a448-f99f4c00a50e",
+		"_postman_id": "4dc048b2-99a8-456b-9b5f-6c32ff1eb352",
 		"name": "starshipCommsResolver",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "20306858"
+		"_exporter_id": "23266366"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://{{host}}:{{port}}/topsecret_split/kenobi"
+				"url": "34.170.26.135:8080/topsecret_split/kenobi"
 			},
 			"response": []
 		},
@@ -29,7 +29,7 @@
 						}
 					}
 				},
-				"url": "http://{{host}}:{{port}}/topsecret/"
+				"url": "34.170.26.135:8080/topsecret/"
 			},
 			"response": []
 		},
@@ -47,7 +47,7 @@
 						}
 					}
 				},
-				"url": "http://{{host}}:{{port}}/topsecret_split/kenobi"
+				"url": "34.170.26.135:8080/topsecret_split/kenobi"
 			},
 			"response": []
 		}
