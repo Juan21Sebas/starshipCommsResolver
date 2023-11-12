@@ -1,5 +1,3 @@
-// server_test.go
-
 package starshipcommsresolver
 
 import (
