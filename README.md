@@ -76,9 +76,7 @@ To run this service locally, follow these steps:
 - Access http://lcambiar to interact with the service locally.
 
 ## Video Presentation
-
-
-
+https://www.youtube.com/watch?v=G6ZZycqXmAM
 ### Autor
 #### Juan Sebastian Sanchez Arteta
 
